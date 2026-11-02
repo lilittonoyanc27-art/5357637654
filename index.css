@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* Custom Millionaire Hexagonal / Angled Bevel Shape */
+.clip-angled {
+  clip-path: polygon(14px 0%, calc(100% - 14px) 0%, 100% 50%, calc(100% - 14px) 100%, 14px 100%, 0% 50%);
+}
+
+.clip-angled-sm {
+  clip-path: polygon(8px 0%, calc(100% - 8px) 0%, 100% 50%, calc(100% - 8px) 100%, 8px 100%, 0% 50%);
+}
+
+/* Metallic gold text and border gradients */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFF3B0 0%, #CA9E3C 50%, #FFDF73 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.silver-gradient-text {
+  background: linear-gradient(135deg, #FFFFFF 0%, #CBD5E1 50%, #F1F5F9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Smooth background spotlight */
+.radial-spotlight {
+  background: radial-gradient(circle at 50% 20%, rgba(29, 78, 216, 0.25) 0%, rgba(15, 23, 42, 0.85) 60%, #030712 100%);
+}
+
+/* Subtle glow pulse */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(234, 179, 8, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(234, 179, 8, 0.8);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 1.5s infinite ease-in-out;
+}

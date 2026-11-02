@@ -1,0 +1,6 @@
+{
+  "name": "Los Tiempos del Pasado — Ո՞վ է ուզում դառնալ միլիոնատեր",
+  "description": "Իսպաներենի անցյալ ժամանակների ինտերակտիվ վիկտորինա (A2–B1) «Ո՞վ է ուզում դառնալ միլիոնատեր» ոճով։ Հայերեն թարգմանություններով և քերականական բացատրություններով։",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
